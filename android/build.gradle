@@ -44,28 +44,12 @@ android {
   lintOptions {
     disable 'GradleCompatible'
   }
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
-    targetCompatibility JavaVersion.VERSION_1_8
-  }
-
-  kotlinOptions {
-    jvmTarget = "1.8"
-  }
 }
 
 repositories {
   mavenCentral()
   jcenter()
   google()
-
-  maven {
-    url  "https://cardinalcommerceprod.jfrog.io/artifactory/android"
-    credentials {
-      username 'paypal_sgerritz'
-      password 'AKCp8jQ8tAahqpT5JjZ4FRP2mW7GMoFZ674kGqHmupTesKeAY2G8NcmPKLuTxTGkKjDLRzDUQ'
-    }
-  }
 
   def found = false
   def defaultDir = null
